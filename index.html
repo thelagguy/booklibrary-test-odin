@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Book Library</title>
+</head>
+<body>
+    <div class="con">
+    
+         <table class="bookshelf">
+            <thead>
+                <caption>
+                    <h2>
+                    Bookshelf
+                    </h2>
+                </caption>
+                <tr>
+                  <h2>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Pages</th>
+                    <th>Author</th>
+                    <th>Read</th>
+                  </h2>
+                </tr>
+            </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>0909090eaweaweae</td>
+                        <td>Lorax</td>
+                        <td>79</td>                        
+                        <td>John Pork</td>
+                        <td><input id="tick" type="checkbox" checked></input></td>
+                    </tr> -->
+                </tbody>
+        </table>
+       <div style="display: flex ; justify-content: center; margin: 1rem;"> <button class="Add">Add Book</button></div>
+    </div>
+    <dialog class="dlg">
+       <form action="dialog" class="dlgcon">
+        <h1>Add a Book</h1>
+        <label for="bname">Name of Book</label>
+        <input type="text" required id="bname" name="bname_out">
+        <label for="pages">Pages</label>
+        <input type="number" required id="pages" name="pgaes_out">
+        <label for="author">Author of book</label>
+        <input type="text" required id="author" name="author_out">
+        <button class="Sub">Submit</button>
+       </form>
+        <button class="Close">Close</button>
+    </dialog>
+</body>
+</html>
