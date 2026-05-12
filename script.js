@@ -48,9 +48,10 @@ function output(i){
 const row = document.querySelector(".bookshelf tbody") ;
 let start = 0;
 sub.addEventListener("click", (e) =>{
-    if (book.value !==""){
+    book.validity.valueMissing ? book.setCustomValidity('Please enter something idiot') : book.setCustomValidity('');
+    if (book.validity.valid){
         e.preventDefault() ;
-
+       
         addtolib(book.value,pages.value,author.value) ;
        
         row.innerHTML =row.innerHTML + `<tr></tr>`
